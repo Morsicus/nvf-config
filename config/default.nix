@@ -6,6 +6,8 @@
       style = "night";
     };
 
+    mini.icons.enable = true;
+
     keymaps = [
       {
         action = ":FzfLua files<CR>";
