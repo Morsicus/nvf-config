@@ -79,6 +79,27 @@
         mode = "n";
         silent = true;
       }
+      {
+        action = ":FzfLua files cwd=~/Brain<CR>";
+        desc = "[F]ind";
+        key = "<leader>nf";
+        mode = "n";
+        silent = true;
+      }
+      {
+        action = ":FzfLua live_grep cwd=~/Brain<CR>";
+        desc = "[G]rep";
+        key = "<leader>ng";
+        mode = "n";
+        silent = true;
+      }
+      {
+        action = ":Oil ~/Brain<CR>";
+        desc = "[N]ew";
+        key = "<leader>nn";
+        mode = "n";
+        silent = true;
+      }
     ];
 
     options = {
@@ -113,6 +134,7 @@
         "<leader>f" = "[F]ind";
         "<leader>g" = "[G]it";
         "<leader>l" = "[L]sp";
+        "<leader>n" = "[N]otes";
       };
     };
 
