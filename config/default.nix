@@ -6,6 +6,7 @@
       style = "night";
     };
 
+    ui.noice.enable = true;
     mini.icons.enable = true;
 
     keymaps = [
