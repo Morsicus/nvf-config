@@ -100,6 +100,27 @@
         mode = "n";
         silent = true;
       }
+      {
+        action = ":bdelete<CR>";
+        desc = "[D]elete";
+        key = "<leader>bd";
+        mode = "n";
+        silent = true;
+      }
+      {
+        action = ":bNext<CR>";
+        desc = "[N]ext";
+        key = "<leader>bn";
+        mode = "n";
+        silent = true;
+      }
+      {
+        action = ":bprevious<CR>";
+        desc = "[P]revious";
+        key = "<leader>bp";
+        mode = "n";
+        silent = true;
+      }
     ];
 
     options = {
@@ -131,6 +152,7 @@
     binds.whichKey = {
       enable = true;
       register = {
+        "<leader>b" = "[B]uffer";
         "<leader>f" = "[F]ind";
         "<leader>g" = "[G]it";
         "<leader>l" = "[L]sp";
