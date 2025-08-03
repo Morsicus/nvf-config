@@ -192,6 +192,10 @@
         enable = true;
       };
 
+      lua = {
+        enable = true;
+      };
+
       elixir = {
         enable = true;
       };
