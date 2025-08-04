@@ -163,7 +163,15 @@
       };
     };
 
-    utility.oil-nvim.enable = true;
+    utility.oil-nvim = {
+      enable = true;
+      setupOpts = {
+        view_options = {
+          show_hidden = true;
+        };
+      };
+    };
+
     binds.whichKey = {
       enable = true;
       register = {
