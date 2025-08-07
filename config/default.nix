@@ -8,6 +8,7 @@
 
     ui.noice.enable = true;
     mini.icons.enable = true;
+    formatter.conform-nvim.enable = true;
 
     keymaps = [
       {
@@ -199,7 +200,14 @@
     statusline.lualine.enable = true;
     lsp.enable = true;
     autocomplete = {
-      blink-cmp.enable = true;
+      blink-cmp = {
+        enable = true;
+        mappings = {
+          confirm = "<C-y>";
+          next = "<C-n>";
+          previous = "<C-p>";
+        };
+      };
     };
 
     languages = {
