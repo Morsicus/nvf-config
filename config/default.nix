@@ -7,6 +7,7 @@
     };
 
     ui.noice.enable = true;
+    ui.nvim-ufo.enable = true;
     mini.icons.enable = true;
     formatter.conform-nvim.enable = true;
 
