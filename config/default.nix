@@ -7,7 +7,6 @@
     };
 
     ui.noice.enable = true;
-    ui.nvim-ufo.enable = true;
     mini.icons.enable = true;
     formatter.conform-nvim.enable = true;
 
@@ -147,6 +146,9 @@
       shiftwidth = 2;
       wrap = false;
       conceallevel = 2;
+      foldmethod = "expr";
+      foldexpr = "v:lua.vim.treesitter.foldexpr()";
+      foldlevelstart = 99;
     };
 
     viAlias = false;
