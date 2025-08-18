@@ -8,6 +8,7 @@
 
     ui.noice.enable = true;
     mini.icons.enable = true;
+    mini.surround.enable = true;
     formatter.conform-nvim.enable = true;
 
     keymaps = [
@@ -166,8 +167,6 @@
         };
       };
     };
-
-    utility.surround.enable = true;
 
     utility.oil-nvim = {
       enable = true;
