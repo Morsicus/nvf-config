@@ -8,7 +8,21 @@
 
     ui.noice.enable = true;
     mini.icons.enable = true;
-    mini.surround.enable = true;
+    mini.surround = {
+      enable = true;
+      setupOpts = {
+          mappings = {
+            add = "sa";
+            delete = "sd";
+            find = "sf";
+            find_left = "sF";
+            highlight = "sh";
+            replace = "sr";
+          };
+          n_lines = 40;
+      };
+    };
+
     formatter.conform-nvim.enable = true;
 
     keymaps = [
