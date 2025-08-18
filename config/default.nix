@@ -167,6 +167,8 @@
       };
     };
 
+    utility.surround.enable = true;
+
     utility.oil-nvim = {
       enable = true;
       setupOpts = {
