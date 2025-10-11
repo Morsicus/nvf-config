@@ -9,7 +9,7 @@
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
 
-      configModule = import ./config;
+      configModule = import ./default.nix;
 
       customNeovim = nvf.lib.neovimConfiguration {
         modules = [ configModule ];
