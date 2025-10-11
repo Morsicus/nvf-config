@@ -21,34 +21,12 @@
         extensions.markview-nvim.enable = true;
       };
 
-      nix = {
-        enable = true;
-      };
-
-      lua = {
-        enable = true;
-      };
-
-      elixir = {
-        enable = true;
-      };
-
-      go = {
-        enable = true;
-      };
-
-      rust = {
-        enable = true;
-        lsp.opts = ''
-          ['rust-analyzer'] = {
-            cargo = {allFeature = true},
-            checkOnSave = true,
-            procMacro = {
-              enable = true,
-            },
-          },
-        '';
-      };
+      elixir.enable = true;
+      go.enable = true;
+      lua.enable = true;
+      nix.enable = true;
+      rust.enable = true;
+      terraform.enable = true;
     };
   };
 }
