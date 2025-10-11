@@ -1,6 +1,17 @@
 {
   config.vim = {
-    lsp.enable = true;
+    lsp = {
+      enable = true;
+      # Remove some default bindings
+      mappings = {
+        nextDiagnostic = null;
+        previousDiagnostic = null;
+        openDiagnosticFloat = null;
+        documentHighlight = null;
+        listDocumentSymbols = null;
+      };
+    };
+
     autocomplete = {
       blink-cmp = {
         enable = true;
