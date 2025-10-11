@@ -127,6 +127,13 @@
         mode = "n";
         silent = true;
       }
+      {
+        action = ":FzfLua diagnostics_document<CR>";
+        desc = "[D]diagnostics_document";
+        key = "<leader>ld";
+        mode = "n";
+        silent = true;
+      }
     ];
   };
 }
