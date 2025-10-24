@@ -9,5 +9,6 @@
     ./config/ui.nix
     ./config/whichkey.nix
     ./config/gitsign.nix
+    ./config/toggleterm.nix
   ];
 }
