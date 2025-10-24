@@ -8,5 +8,6 @@
     ./config/options.nix
     ./config/ui.nix
     ./config/whichkey.nix
+    ./config/gitsign.nix
   ];
 }
