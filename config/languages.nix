@@ -34,6 +34,7 @@
       rust.enable = true;
       terraform.enable = true;
       gleam.enable = true;
+      sql.enable = true;
     };
   };
 }
