@@ -63,13 +63,6 @@
         silent = true;
       }
       {
-        action = ":FzfLua lgrep_curbuf<CR>";
-        desc = "[S]earch";
-        key = "<c-s>";
-        mode = "n";
-        silent = true;
-      }
-      {
         action = ":FzfLua<CR>";
         desc = "f[Z]f";
         key = "<leader>fz";
