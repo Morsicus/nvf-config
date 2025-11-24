@@ -27,14 +27,15 @@
         extensions.markview-nvim.enable = true;
       };
 
+      clojure.enable = true;
       elixir.enable = true;
+      gleam.enable = true;
       go.enable = true;
       lua.enable = true;
       nix.enable = true;
       rust.enable = true;
-      terraform.enable = true;
-      gleam.enable = true;
       sql.enable = true;
+      terraform.enable = true;
     };
   };
 }
