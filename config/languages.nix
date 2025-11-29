@@ -10,11 +10,15 @@
         documentHighlight = null;
         listDocumentSymbols = null;
       };
+      formatOnSave = true;
+      lightbulb.enable = true;
+      trouble.enable = true;
     };
 
     autocomplete = {
       blink-cmp = {
         enable = true;
+        setupOpts.signature.enabled = true;
       };
     };
 
