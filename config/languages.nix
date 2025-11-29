@@ -3,6 +3,7 @@
     autopairs.nvim-autopairs.enable = true;
     lsp = {
       enable = true;
+      lspkind.enable = false;
       # Remove some default bindings
       mappings = {
         nextDiagnostic = null;

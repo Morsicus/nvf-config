@@ -8,6 +8,7 @@
 
     ui = {
       borders.enable = true;
+      illuminate.enable = true;
       noice = {
         enable = true;
         setupOpts = {
