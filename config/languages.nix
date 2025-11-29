@@ -1,5 +1,12 @@
 {
   config.vim = {
+    spellcheck = {
+      enable = true;
+      languages = [
+        "en"
+      ];
+    };
+
     autopairs.nvim-autopairs.enable = true;
     lsp = {
       enable = true;
