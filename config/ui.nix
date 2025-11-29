@@ -6,7 +6,18 @@
       style = "night";
     };
 
-    ui.noice.enable = true;
+    ui = {
+      borders.enable = true;
+      noice = {
+        enable = true;
+        setupOpts = {
+          cmdline.opts.position = {
+            row = "40%";
+            col = "50%";
+          };
+        };
+      };
+    };
     visuals.nvim-web-devicons.enable = true;
     utility.snacks-nvim.enable = true;
     mini.icons.enable = true;
