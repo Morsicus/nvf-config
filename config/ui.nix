@@ -9,15 +9,7 @@
     ui = {
       borders.enable = true;
       illuminate.enable = true;
-      noice = {
-        enable = true;
-        setupOpts = {
-          cmdline.opts.position = {
-            row = "40%";
-            col = "50%";
-          };
-        };
-      };
+      noice.enable = false; # Disabled because it seems to breal the recording mode
     };
     visuals.nvim-web-devicons.enable = true;
     utility.snacks-nvim.enable = true;
