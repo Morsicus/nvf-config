@@ -1,23 +1,25 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nvf.url = "github:notashelf/nvf";
+    nvf.url = "github:notashelf/nvf/v0.8";
   };
 
-  outputs = { nixpkgs, nvf, ... }:
-    let
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
+  outputs = {
+    nixpkgs,
+    nvf,
+    ...
+  }: let
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
 
-      configModule = import ./default.nix;
+    configModule = import ./default.nix;
 
-      customNeovim = nvf.lib.neovimConfiguration {
-        modules = [ configModule ];
-        inherit pkgs;
-      };
-    in
-    {
-      # this will make the package available as a flake input
-      packages.${system}.default = customNeovim.neovim;
+    customNeovim = nvf.lib.neovimConfiguration {
+      modules = [configModule];
+      inherit pkgs;
     };
+  in {
+    # this will make the package available as a flake input
+    packages.${system}.default = customNeovim.neovim;
+  };
 }
