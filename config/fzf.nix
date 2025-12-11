@@ -1,5 +1,6 @@
 {
   config.vim = {
+    notes.todo-comments.enable = true;
     fzf-lua = {
       enable = true;
       setupOpts = {
@@ -28,9 +29,9 @@
         silent = true;
       }
       {
-        action = ":FzfLua live_grep<CR>"; 
-        desc = "[G]rep"; 
-        key = "<leader>fg"; 
+        action = ":FzfLua live_grep<CR>";
+        desc = "[G]rep";
+        key = "<leader>fg";
         mode = "n";
         silent = true;
       }
@@ -94,6 +95,13 @@
         action = ":FzfLua lsp_document_symbols<CR>";
         desc = "[S]ymbole Document";
         key = "<leader>lS";
+        mode = "n";
+        silent = true;
+      }
+      {
+        action = ":TodoFzfLua<CR>";
+        desc = "[t]odo";
+        key = "<leader>ft";
         mode = "n";
         silent = true;
       }
