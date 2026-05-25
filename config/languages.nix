@@ -18,6 +18,7 @@
         openDiagnosticFloat = null;
         documentHighlight = null;
         listDocumentSymbols = null;
+        listReferences = null;
       };
       formatOnSave = true;
       lightbulb.enable = true;

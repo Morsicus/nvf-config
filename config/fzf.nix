@@ -92,6 +92,13 @@
         silent = true;
       }
       {
+        action = ":FzfLua lsp_references<CR>";
+        desc = "[G]oto [R]eferences";
+        key = "gr";
+        mode = "n";
+        silent = true;
+      }
+      {
         action = ":FzfLua lsp_document_symbols<CR>";
         desc = "[S]ymbole Document";
         key = "<leader>lS";
