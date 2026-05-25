@@ -50,6 +50,13 @@
         mode = "n";
         silent = true;
       }
+      {
+        action = ":lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({bufnr = 0}), {bufnr = 0})<CR>";
+        desc = "Toggle [I]nlay Hints";
+        key = "<leader>li";
+        mode = "n";
+        silent = true;
+      }
     ];
   };
 }
